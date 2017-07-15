@@ -1,0 +1,9 @@
+aws_account_id = "<example-account-id>"
+aws_access_key = "<example-access-key>"
+aws_secret_key = "<example-secret-key>"
+aws_region = "<example-region>"
+
+stage_name = "<example-stage-name>"
+apigateway_stage_name = "<example-stage-name>"
+
+api_version = "<x_y_z>"
