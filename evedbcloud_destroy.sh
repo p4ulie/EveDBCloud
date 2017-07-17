@@ -1,3 +1,5 @@
 #!/bin/sh
 
-terraform destroy -var-file=trans.tfvars
+TFSTATEFILE="evedbcloud.tfstate"
+
+terraform destroy -var-file=evedbcloud.tfvars -state=${TFSTATEFILE}

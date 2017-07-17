@@ -3,5 +3,5 @@
 TFSTATEFILE="evedbcloud.tfstate"
 OUTFILE="evedbcloud.tfout"
 
-terraform plan -var-file=trans.tfvars -state=${TFSTATEFILE} -out=${OUTFILE}
+terraform plan -var-file=evedbcloud.tfvars -state=${TFSTATEFILE} -out=${OUTFILE}
 
