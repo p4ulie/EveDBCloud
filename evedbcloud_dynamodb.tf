@@ -1,3 +1,25 @@
+resource "aws_dynamodb_table" "eve-db-invCategories_dynamodb_table" {
+    name = "eve-db-invCategories"
+    read_capacity = 5
+    write_capacity = 5
+    hash_key = "categoryID"
+    attribute {
+      name = "categoryID"
+      type = "N"
+    }
+}
+
+resource "aws_dynamodb_table" "eve-db-invGroups_dynamodb_table" {
+    name = "eve-db-invGroups"
+    read_capacity = 5
+    write_capacity = 5
+    hash_key = "groupID"
+    attribute {
+      name = "groupID"
+      type = "N"
+    }
+}
+
 resource "aws_dynamodb_table" "eve-db-invTypes_dynamodb_table" {
     name = "eve-db-invTypes"
     read_capacity = 5
